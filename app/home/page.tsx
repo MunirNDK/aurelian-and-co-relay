@@ -125,7 +125,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className={styles.heroMedia}>
-          <img src="/assets/images/hero-tourbillon.png" alt="Rose gold tourbillon dress watch" className={styles.heroImage} />
+          <img src="/assets/images/hero-tourbillon.webp" alt="Rose gold tourbillon dress watch" className={styles.heroImage} />
         </div>
       </section>
 
@@ -133,7 +133,7 @@ export default function HomePage() {
       <section id="collection-categories" data-section="collection-categories" className={styles.collectionCategories}>
         <div className={styles.collectionGrid}>
           <article className={styles.collectionCard}>
-            <img src="/assets/images/collection-classic.png" alt="Classic collection watch" className={styles.collectionImage} />
+            <img src="/assets/images/collection-classic.webp" alt="Classic collection watch" className={styles.collectionImage} />
             <h2 className={styles.cardTitle}>CLASSIC COLLECTION</h2>
             <p className={styles.body}>
               Timeless proportion.
@@ -143,7 +143,7 @@ export default function HomePage() {
             <p className={styles.price}>FROM £4,950</p>
           </article>
           <article className={styles.collectionCard}>
-            <img src="/assets/images/collection-sport.png" alt="Sport collection watch" className={styles.collectionImage} />
+            <img src="/assets/images/collection-sport.webp" alt="Sport collection watch" className={styles.collectionImage} />
             <h2 className={styles.cardTitle}>SPORT COLLECTION</h2>
             <p className={styles.body}>
               Purpose-built. Refined.
@@ -153,7 +153,7 @@ export default function HomePage() {
             <p className={styles.price}>FROM £6,450</p>
           </article>
           <article className={styles.collectionCard}>
-            <img src="/assets/images/collection-complications.png" alt="Complications collection watch" className={styles.collectionImage} />
+            <img src="/assets/images/collection-complications.webp" alt="Complications collection watch" className={styles.collectionImage} />
             <h2 className={styles.cardTitle}>COMPLICATIONS</h2>
             <p className={styles.body}>
               Where art meets mechanics.
@@ -168,7 +168,7 @@ export default function HomePage() {
       {/* Band 4: Featured Calibre */}
       <section id="movements" data-section="featured-calibre" className={styles.featuredCalibre}>
         <div className={styles.calibreMedia}>
-          <img src="/assets/images/calibre-movement.png" alt="Calibre A&CO-01 movement macro" className={styles.calibreImage} />
+          <img src="/assets/images/calibre-movement.webp" alt="Calibre A&CO-01 movement macro" className={styles.calibreImage} />
         </div>
         <div className={styles.calibreSpecs}>
           <p className={styles.eyebrowMetal}>FEATURED CALIBRE</p>
@@ -201,10 +201,10 @@ export default function HomePage() {
       <section id="products" data-section="product-grid" className={styles.productGrid}>
         <div className={styles.productGridInner}>
           {[
-            { img: "/assets/images/product-heritage-small-seconds.png", name: "HERITAGE SMALL SECONDS", ref: "REF. HS501", price: "£4,950" },
-            { img: "/assets/images/product-mariner-300.png", name: "MARINER 300", ref: "REF. MR300", price: "£6,750" },
-            { img: "/assets/images/product-perpetual-calendar.png", name: "PERPETUAL CALENDAR", ref: "REF. PC01", price: "£12,800" },
-            { img: "/assets/images/product-tourbillon-sovereign.png", name: "TOURBILLON SOVEREIGN", ref: "REF. TS01", price: "£24,500" },
+            { img: "/assets/images/product-heritage-small-seconds.webp", name: "HERITAGE SMALL SECONDS", ref: "REF. HS501", price: "£4,950" },
+            { img: "/assets/images/product-mariner-300.webp", name: "MARINER 300", ref: "REF. MR300", price: "£6,750" },
+            { img: "/assets/images/product-perpetual-calendar.webp", name: "PERPETUAL CALENDAR", ref: "REF. PC01", price: "£12,800" },
+            { img: "/assets/images/product-tourbillon-sovereign.webp", name: "TOURBILLON SOVEREIGN", ref: "REF. TS01", price: "£24,500" },
           ].map((product, index) => (
             <article key={index} className={styles.productCard}>
               <button
@@ -247,7 +247,7 @@ export default function HomePage() {
           </a>
         </div>
         <div className={styles.atelierMedia}>
-          <img src="/assets/images/atelier-bench.png" alt="Watchmaker's bench" className={styles.atelierImage} />
+          <img src="/assets/images/atelier-bench.webp" alt="Watchmaker's bench" className={styles.atelierImage} />
         </div>
       </section>
 
