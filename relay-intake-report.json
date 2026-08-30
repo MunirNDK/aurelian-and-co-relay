@@ -168,8 +168,41 @@
       "status": "present",
       "weight": 5,
       "expected": "assets/logos, assets/icons, assets/images — originals, not crops"
+    },
+    {
+      "id": "chrome",
+      "files": [
+        "chrome/header.png",
+        "chrome/footer.png",
+        "chrome/chrome.md"
+      ],
+      "found": "header · footer · chrome.md",
+      "label": "Global chrome",
+      "detail": "header and footer supplied once under chrome/ and composed into every page. Warning: a section inventory still names a header/footer band — screens should be exported without chrome.",
+      "status": "present",
+      "weight": 0,
+      "expected": "chrome/header.png + chrome/footer.png (optional, worth supplying) + chrome/chrome.md"
+    },
+    {
+      "id": "overlays",
+      "files": [
+        "overlays/appointment.png",
+        "overlays/overlays.md"
+      ],
+      "found": "appointment",
+      "label": "Global overlays",
+      "detail": "1 modal/popup supplied once under overlays/ and opened by declared triggers.",
+      "status": "present",
+      "weight": 0,
+      "expected": "overlays/<name>.png for each modal/popup (optional) + overlays.md"
     }
   ],
+  "chrome": {
+    "footer": "chrome/footer.png",
+    "header": "chrome/header.png",
+    "section": "chrome/chrome.md",
+    "screensStillShowChrome": true
+  },
   "screens": [
     {
       "id": "home",
@@ -373,6 +406,24 @@
       "group": "prepare-report.txt"
     },
     {
+      "kind": "chrome",
+      "path": "chrome/chrome.md",
+      "bytes": 195,
+      "group": "chrome"
+    },
+    {
+      "kind": "chrome",
+      "path": "chrome/footer.png",
+      "bytes": 18003,
+      "group": "footer"
+    },
+    {
+      "kind": "chrome",
+      "path": "chrome/header.png",
+      "bytes": 7822,
+      "group": "header"
+    },
+    {
       "kind": "design-system",
       "path": "design-system.md",
       "bytes": 6666
@@ -393,6 +444,18 @@
       "bytes": 38404
     },
     {
+      "kind": "overlay",
+      "path": "overlays/appointment.png",
+      "bytes": 37702,
+      "group": "appointment.png"
+    },
+    {
+      "kind": "overlay",
+      "path": "overlays/overlays.md",
+      "bytes": 126,
+      "group": "overlays.md"
+    },
+    {
       "kind": "prompt",
       "path": "prompts/01-home.txt",
       "bytes": 408
@@ -411,6 +474,13 @@
       "kind": "section",
       "path": "sections/01-home.md",
       "bytes": 7231
+    }
+  ],
+  "overlays": [
+    {
+      "id": "appointment",
+      "file": "overlays/appointment.png",
+      "name": "Appointment"
     }
   ],
   "coherence": {
@@ -682,10 +752,10 @@
       "inferred": false
     }
   ],
-  "totalBytes": 11798603,
-  "totalFiles": 40,
-  "uploadedAt": "2026-08-29T23:15:46.403Z",
-  "packageName": "aurelian-handoff-v3",
+  "totalBytes": 11862451,
+  "totalFiles": 45,
+  "uploadedAt": "2026-08-30T01:41:00.450Z",
+  "packageName": "aurelian-chrome-pkg",
   "designTokens": {
     "ink": {
       "value": "#151412",

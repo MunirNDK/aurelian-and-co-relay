@@ -1,31 +1,27 @@
 {
-  "runId": "run-20260829231547-dc988c",
-  "projectName": "Aurelian UI Run",
+  "runId": "run-20260830014102-a81743",
+  "projectName": "Aurelian & Co",
   "clientName": "Aurelian & Co",
-  "tier": "flagship",
-  "packageName": "aurelian-handoff-v3",
-  "packageVersion": 5,
-  "packageId": "caa28b68-3e1f-4feb-95a9-f7de80e8d14c",
-  "intakeScore": 1,
-  "structureGate": {
-    "decision": "approved",
-    "notes": "Structure approved for source generation.",
-    "decidedAt": "2026-08-29T23:15:52.646Z"
-  },
+  "tier": "standard",
+  "packageName": "aurelian-chrome-pkg",
+  "packageVersion": 1,
+  "packageId": "pkg-recovered-run-20260830014102-a81743",
+  "intakeScore": 0,
+  "structureGate": null,
   "buildGate": null,
   "qa": {
     "status": "failed",
-    "blockers": 22,
-    "advisory": 9,
-    "attempt": 2
+    "blockers": 17,
+    "advisory": 19,
+    "attempt": 3
   },
   "screens": [
     {
       "id": "home",
       "name": "Home",
       "route": "/home",
-      "status": "running"
+      "status": "built"
     }
   ],
-  "bundledAt": "2026-08-30T04:42:34.546Z"
+  "bundledAt": "2026-08-30T17:19:19.043Z"
 }
