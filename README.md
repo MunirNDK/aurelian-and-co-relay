@@ -16,7 +16,7 @@ from the same package produces the same review.
 | Gate 2 — structure | approved on 2026-08-29 |
 | Gate 3 — build | not recorded |
 | QA | failed — 22 blocking, 9 advisory (attempt 2) |
-| Bundled | 2026-08-30T04:21:47.178Z |
+| Bundled | 2026-08-30T04:27:22.832Z |
 
 `relay-provenance.json` carries the same record in machine-readable form. Do not edit it; it is what
 ties a deployed URL back to the package that authorised it.
