@@ -1,0 +1,10 @@
+opaque   hero-tourbillon                  1672x941 → 1464x1002 (slot aspect 1.46)
+opaque   collection-classic               1672x941 → 780x600 (slot aspect 1.3)
+opaque   collection-sport                 1672x941 → 774x552 (slot aspect 1.4)
+opaque   collection-complications         1672x941 → 756x560 (slot aspect 1.35)
+opaque   calibre-movement                 1672x941 → 1296x652 (slot aspect 1.99)
+cutout   product-heritage-small-seconds   941x1672 → trim 839x1659 → 600x1186
+cutout   product-mariner-300              941x1672 → trim 878x1672 → 600x1143
+cutout   product-perpetual-calendar       941x1672 → trim 836x1654 → 600x1187
+cutout   product-tourbillon-sovereign     941x1672 → trim 922x1672 → 600x1088
+opaque   atelier-bench                    1672x941 → 1422x484 (slot aspect 2.94)

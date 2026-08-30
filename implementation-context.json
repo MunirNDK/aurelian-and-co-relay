@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "projectSummary": "Aurelian & Co is a haute horlogerie maison. This run rebuilds its flagship home screen as production Next.js source.",
+  "functionalNotes": "Primary CTAs navigate to the collections and product pages declared in the flow. The newsletter field submits a client-side confirmation. No backend is available; interactions remain client-side.",
+  "backendNotes": "",
+  "dataNotes": "",
+  "integrations": "",
+  "constraints": "",
+  "ctas": [],
+  "interaction": {
+    "version": "1.0",
+    "controls": [
+      {
+        "testId": "home-s1-primary-navigation",
+        "screenId": "home",
+        "section": "s1",
+        "label": "Primary navigation",
+        "role": "navigation",
+        "behavior": "undeclared",
+        "target": "",
+        "notes": "",
+        "source": "read"
+      }
+    ],
+    "entities": [],
+    "handlers": []
+  }
+}

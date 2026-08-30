@@ -1,0 +1,31 @@
+{
+  "runId": "run-20260829231547-dc988c",
+  "projectName": "Aurelian UI Run",
+  "clientName": "Aurelian & Co",
+  "tier": "flagship",
+  "packageName": "aurelian-handoff-v3",
+  "packageVersion": 5,
+  "packageId": "caa28b68-3e1f-4feb-95a9-f7de80e8d14c",
+  "intakeScore": 1,
+  "structureGate": {
+    "decision": "approved",
+    "notes": "Structure approved for source generation.",
+    "decidedAt": "2026-08-29T23:15:52.646Z"
+  },
+  "buildGate": null,
+  "qa": {
+    "status": "failed",
+    "blockers": 22,
+    "advisory": 9,
+    "attempt": 2
+  },
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "route": "/home",
+      "status": "running"
+    }
+  ],
+  "bundledAt": "2026-08-30T03:51:19.113Z"
+}

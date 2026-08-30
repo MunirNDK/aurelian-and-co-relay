@@ -1,0 +1,141 @@
+{
+  "package": "aurelian-handoff-v3",
+  "screen": "01-home",
+  "note": "Slot geometry is the intake system's own measurement of screens/01-home.jpg, converted to CSS pixels at the 1440px design viewport. Delivery files are cut to the slot aspect at 2x.",
+  "images": [
+    {
+      "id": "hero-tourbillon",
+      "file": "images/hero-tourbillon.png",
+      "section": 2,
+      "slot": "Hero — full-bleed right column",
+      "measured": { "width": 732, "height": 501, "aspect": 1.46 },
+      "delivered": { "width": 1464, "height": 1002 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "Rose gold tourbillon dress watch photographed in close-up against a dark ground"
+    },
+    {
+      "id": "collection-classic",
+      "file": "images/collection-classic.png",
+      "section": 3,
+      "slot": "Collection categories — card 1",
+      "measured": { "width": 390, "height": 300, "aspect": 1.30 },
+      "delivered": { "width": 780, "height": 600 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "Steel dress watch with a black dial resting on dark slate"
+    },
+    {
+      "id": "collection-sport",
+      "file": "images/collection-sport.png",
+      "section": 3,
+      "slot": "Collection categories — card 2",
+      "measured": { "width": 387, "height": 276, "aspect": 1.40 },
+      "delivered": { "width": 774, "height": 552 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "Steel sports watch on a bracelet with a navy dial on a pale grey ground"
+    },
+    {
+      "id": "collection-complications",
+      "file": "images/collection-complications.png",
+      "section": 3,
+      "slot": "Collection categories — card 3",
+      "measured": { "width": 378, "height": 280, "aspect": 1.35 },
+      "delivered": { "width": 756, "height": 560 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "Rose gold openworked chronograph on a brown leather strap against warm ivory"
+    },
+    {
+      "id": "calibre-movement",
+      "file": "images/calibre-movement.png",
+      "section": 4,
+      "slot": "Featured calibre — left column",
+      "measured": { "width": 648, "height": 326, "aspect": 1.99 },
+      "delivered": { "width": 1296, "height": 652 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "Macro photograph of a mechanical movement with a brushed rotor and jewelled gear train"
+    },
+    {
+      "id": "product-heritage-small-seconds",
+      "file": "images/product-heritage-small-seconds.png",
+      "section": 5,
+      "slot": "Product grid — card 1",
+      "measured": { "width": 135, "height": 238, "aspect": 0.57 },
+      "delivered": { "width": 600, "height": null },
+      "treatment": "cutout",
+      "alt": "Heritage Small Seconds — steel watch with a silver-white dial and black leather strap"
+    },
+    {
+      "id": "product-mariner-300",
+      "file": "images/product-mariner-300.png",
+      "section": 5,
+      "slot": "Product grid — card 2",
+      "measured": { "width": 138, "height": 236, "aspect": 0.58 },
+      "delivered": { "width": 600, "height": null },
+      "treatment": "cutout",
+      "alt": "Mariner 300 — steel sports watch with a navy dial on a steel bracelet"
+    },
+    {
+      "id": "product-perpetual-calendar",
+      "file": "images/product-perpetual-calendar.png",
+      "section": 5,
+      "slot": "Product grid — card 3",
+      "measured": { "width": 144, "height": 245, "aspect": 0.59 },
+      "delivered": { "width": 600, "height": null },
+      "treatment": "cutout",
+      "alt": "Perpetual Calendar — steel watch with a silver dial, moonphase and black leather strap"
+    },
+    {
+      "id": "product-tourbillon-sovereign",
+      "file": "images/product-tourbillon-sovereign.png",
+      "section": 5,
+      "slot": "Product grid — card 4",
+      "measured": { "width": 147, "height": 237, "aspect": 0.62 },
+      "delivered": { "width": 600, "height": null },
+      "treatment": "cutout",
+      "alt": "Tourbillon Sovereign — rose gold openworked watch on a brown leather strap"
+    },
+    {
+      "id": "atelier-bench",
+      "file": "images/atelier-bench.png",
+      "section": 6,
+      "slot": "Atelier story — right column",
+      "measured": { "width": 711, "height": 242, "aspect": 2.94 },
+      "delivered": { "width": 1422, "height": 484 },
+      "treatment": "opaque",
+      "focus": "center",
+      "alt": "A watchmaker's bench of tools, movement holders and loose parts under warm light"
+    }
+  ],
+  "logos": [
+    { "id": "wordmark", "file": "logos/wordmark.svg", "section": 1, "note": "Type-only lockup. Requires fonts/playfair-display-latin-var.woff2." },
+    { "id": "crest", "file": "logos/crest.svg", "section": 8, "note": "A monogram inside a thin metal diamond." },
+    { "id": "press-hodinkee", "file": "logos/press-hodinkee.svg", "section": 7 },
+    { "id": "press-monochrome", "file": "logos/press-monochrome.svg", "section": 7 },
+    { "id": "press-watchpro", "file": "logos/press-watchpro.svg", "section": 7 },
+    { "id": "press-revolution", "file": "logos/press-revolution.svg", "section": 7 },
+    { "id": "press-the-rake", "file": "logos/press-the-rake.svg", "section": 7 },
+    { "id": "pay-visa", "file": "logos/pay-visa.svg", "section": 9 },
+    { "id": "pay-mastercard", "file": "logos/pay-mastercard.svg", "section": 9 },
+    { "id": "pay-amex", "file": "logos/pay-amex.svg", "section": 9 },
+    { "id": "pay-apple-pay", "file": "logos/pay-apple-pay.svg", "section": 9 }
+  ],
+  "icons": [
+    { "id": "search", "file": "icons/search.svg", "section": 1 },
+    { "id": "account", "file": "icons/account.svg", "section": 1 },
+    { "id": "bag", "file": "icons/bag.svg", "section": 1 },
+    { "id": "heart", "file": "icons/heart.svg", "section": 5 },
+    { "id": "arrow-right", "file": "icons/arrow-right.svg", "section": "2, 4, 6, 9" },
+    { "id": "instagram", "file": "icons/instagram.svg", "section": 9 },
+    { "id": "facebook", "file": "icons/facebook.svg", "section": 9 },
+    { "id": "youtube", "file": "icons/youtube.svg", "section": 9 },
+    { "id": "linkedin", "file": "icons/linkedin.svg", "section": 9 }
+  ],
+  "fonts": [
+    { "role": "display", "family": "Playfair Display", "file": "fonts/playfair-display-latin-var.woff2", "axes": "wght 400-900, latin subset", "license": "SIL Open Font License 1.1" },
+    { "role": "text", "family": "Inter", "file": "fonts/inter-latin-var.woff2", "axes": "opsz + wght variable, latin subset", "license": "SIL Open Font License 1.1" }
+  ]
+}

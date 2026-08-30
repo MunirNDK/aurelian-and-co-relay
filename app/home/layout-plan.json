@@ -1,0 +1,65 @@
+[
+  {
+    "band": 1,
+    "name": "Band 1",
+    "heightShare": 2.8,
+    "composition": "horizontal navigation bar with 6 content groups of unequal width",
+    "surface": "#F5F4F0"
+  },
+  {
+    "band": 2,
+    "name": "Band 2",
+    "heightShare": 20.4,
+    "composition": "asymmetric two-part split: left hero text block, right full-height image",
+    "surface": "#F6F3EF"
+  },
+  {
+    "band": 3,
+    "name": "Band 3",
+    "heightShare": 16.1,
+    "composition": "3-up grid of equal-width cards",
+    "surface": "#FAF9F7"
+  },
+  {
+    "band": 4,
+    "name": "Band 4",
+    "heightShare": 17,
+    "composition": "asymmetric two-part split: left image, right text block",
+    "surface": "#131312"
+  },
+  {
+    "band": 5,
+    "name": "Band 5",
+    "heightShare": 14.4,
+    "composition": "4-up grid of equal-width cards",
+    "surface": "#FAF9F7"
+  },
+  {
+    "band": 6,
+    "name": "Band 6",
+    "heightShare": 11.9,
+    "composition": "3 content groups of unequal width",
+    "surface": "#F4F1EC"
+  },
+  {
+    "band": 7,
+    "name": "Band 7",
+    "heightShare": 3.5,
+    "composition": "single column",
+    "surface": "#FAF9F7"
+  },
+  {
+    "band": 8,
+    "name": "Band 8",
+    "heightShare": 5.2,
+    "composition": "4 content groups of unequal width",
+    "surface": "#F8F5F2"
+  },
+  {
+    "band": 9,
+    "name": "Band 9",
+    "heightShare": 8.7,
+    "composition": "6 content groups of unequal width",
+    "surface": "#151514"
+  }
+]

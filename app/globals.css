@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  --ink: #151412;
+  --ink-deep: #131312;
+  --ink-inverse: #F4F1EC;
+  --canvas: #F4F1EC;
+  --paper: #FAF9F7;
+  --paper-card: #FAF8F4;
+  --shell: #F6F3EF;
+  --shell-header: #F5F4F0;
+  --shell-appointment: #F8F5F2;
+  --metal: #9B856B;
+  --line: #C9C2B8;
+  --line-inverse: #3A3835;
+  --muted: #6B6660;
+  --muted-inverse: #A8A29A;
+  --display: Playfair Display;
+  --heading: Playfair Display;
+  --quote: Playfair Display;
+  --wordmark: Playfair Display;
+  --wordmark-footer: Playfair Display;
+  --card-title: Playfair Display;
+  --product-name: Playfair Display;
+  --nav: Inter;
+  --eyebrow: Inter;
+  --body: Inter;
+  --body-sm: Inter;
+  --price: Inter;
+  --meta: Inter;
+  --spacing: documented in design-system.md;
+  --radius: documented in design-system.md;
+  --motion: documented in design-system.md;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.relay-annotation-mode [data-src] {
+  cursor: crosshair;
+}
+
+.relay-annotation-mode [data-src]:hover {
+  outline: 3px solid #63e8c7;
+  outline-offset: -3px;
+}

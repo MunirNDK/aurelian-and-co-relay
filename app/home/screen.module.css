@@ -1,0 +1,424 @@
+/* screen.module.css */
+
+/* Self-hosted fonts */
+@font-face {
+  font-family: 'Aurelian Serif';
+  src: url('/fonts/AurelianSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aurelian Serif';
+  src: url('/fonts/AurelianSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aurelian Sans';
+  src: url('/fonts/AurelianSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aurelian Sans';
+  src: url('/fonts/AurelianSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Page container */
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Aurelian Sans', sans-serif;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared band styles */
+.page > * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Band 1: Navigation */
+.band1 {
+  height: 2.8%;
+  background-color: #F5F4F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navBrand a {
+  font-family: 'Aurelian Serif', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  letter-spacing: 0.05em;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.navIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.navIcons button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Band 2: Hero */
+.band2 {
+  height: 20.4%;
+  background-color: #F6F3EF;
+  display: flex;
+}
+
+.heroText {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.heroText h1 {
+  font-family: 'Aurelian Serif', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.heroText p {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroButtons button {
+  padding: 0.75rem 1.5rem;
+  font-family: 'Aurelian Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  background: transparent;
+  color: #1a1a1a;
+}
+
+.heroButtons button:first-child {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.heroImage {
+  flex: 1;
+  background: #d4c5b0; /* placeholder for watch image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Band 3: 3-up cards */
+.band3 {
+  height: 16.1%;
+  background-color: #FAF9F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardImage {
+  height: 120px;
+  background: #e0d5c5; /* placeholder */
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: 'Aurelian Serif', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.card span {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Band 4: Movement split */
+.band4 {
+  height: 17.0%;
+  background-color: #131312;
+  display: flex;
+  color: #ffffff;
+}
+
+.movementImage {
+  flex: 1;
+  background: #2a2a2a; /* placeholder */
+  background-size: cover;
+  background-position: center;
+}
+
+.movementText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.movementText h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.5rem;
+}
+
+.movementText h2 {
+  font-family: 'Aurelian Serif', serif;
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+.movementText ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.movementText li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.movementText button {
+  padding: 0.75rem 1.5rem;
+  background: #ffffff;
+  border: none;
+  font-family: 'Aurelian Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  color: #1a1a1a;
+  align-self: flex-start;
+}
+
+/* Band 5: 4-up cards */
+.band5 {
+  height: 14.4%;
+  background-color: #FAF9F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardGrid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 85%;
+  max-width: 1400px;
+}
+
+/* Reuse .card styles from band3 */
+
+/* Band 6: 3 unequal content groups */
+.band6 {
+  height: 11.9%;
+  background-color: #F4F1EC;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.groupWide {
+  flex: 2;
+  padding: 0 1rem;
+}
+
+.groupMedium {
+  flex: 1.5;
+  padding: 0 1rem;
+}
+
+.groupNarrow {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.band6 h3,
+.band8 h3,
+.band9 h3 {
+  font-family: 'Aurelian Serif', serif;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.band6 p,
+.band8 p,
+.band9 p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Band 7: Single column */
+.band7 {
+  height: 3.5%;
+  background-color: #FAF9F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.band7 blockquote {
+  font-family: 'Aurelian Serif', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+/* Band 8: 4 unequal content groups */
+.band8 {
+  height: 5.2%;
+  background-color: #F8F5F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+/* Band 9: 6 unequal content groups */
+.band9 {
+  height: 8.7%;
+  background-color: #151514;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.band9 .groupWide,
+.band9 .groupMedium,
+.band9 .groupNarrow {
+  padding: 0 0.5rem;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .band1 {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .navMenu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .band2 {
+    flex-direction: column;
+  }
+  .heroText {
+    flex: 1;
+    padding: 1rem;
+  }
+  .heroImage {
+    flex: 1;
+    min-height: 200px;
+  }
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+  .cardGrid4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .band4 {
+    flex-direction: column;
+  }
+  .movementImage {
+    min-height: 200px;
+  }
+  .band6,
+  .band8,
+  .band9 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .groupWide,
+  .groupMedium,
+  .groupNarrow {
+    flex: 1;
+    width: 100%;
+  }
+}

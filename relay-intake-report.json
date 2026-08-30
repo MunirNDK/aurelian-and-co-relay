@@ -1,0 +1,812 @@
+{
+  "flow": [
+    {
+      "to": "home-collections",
+      "from": "home",
+      "action": "EXPLORE THE COLLECTION\"   (scroll to the collection categories)"
+    },
+    {
+      "to": "home-heritage",
+      "from": "home",
+      "action": "DISCOVER OUR HERITAGE\"    (focus the heritage explanation target)"
+    },
+    {
+      "to": "home-movements",
+      "from": "home",
+      "action": "EXPLORE THE MOVEMENT\"     (focus the calibre explanation target)"
+    },
+    {
+      "to": "home-atelier",
+      "from": "home",
+      "action": "STEP INSIDE OUR ATELIER\"  (scroll to the atelier section)"
+    },
+    {
+      "to": "appointment-request",
+      "from": "home",
+      "action": "BOOK AN APPOINTMENT\"      (open the appointment modal)"
+    },
+    {
+      "to": "home",
+      "from": "appointment-request",
+      "action": "close / Escape  (focus returns to the CTA)"
+    },
+    {
+      "to": "home-newsletter",
+      "from": "home",
+      "action": "newsletter submit          (local preview confirmation, no send)"
+    },
+    {
+      "to": "home-unbuilt",
+      "from": "home",
+      "action": "any header nav item        (focus the unbuilt-destination target)"
+    },
+    {
+      "to": "home-unbuilt",
+      "from": "home",
+      "action": "any product card           (focus the unbuilt-destination target)"
+    },
+    {
+      "to": "home-unbuilt",
+      "from": "home",
+      "action": "any footer link            (focus the unbuilt-destination target)"
+    }
+  ],
+  "score": 1,
+  "checks": [
+    {
+      "id": "design-system",
+      "files": [
+        "design-system.md"
+      ],
+      "found": "6.5 KB",
+      "label": "Design system",
+      "detail": "14 colour tokens and 13 type roles read from tables.",
+      "status": "present",
+      "weight": 20,
+      "expected": "design-system.md with hex colour and typography tables"
+    },
+    {
+      "id": "screens",
+      "files": [
+        "screens/01-home.jpg"
+      ],
+      "found": "1 desktop · 0 mobile",
+      "label": "Desktop screens",
+      "detail": "1 numbered rendering. No mobile layouts, so responsive behaviour is derived by rule.",
+      "status": "present",
+      "weight": 25,
+      "expected": "screens/NN-name.png at 1440px, full page height"
+    },
+    {
+      "id": "sections",
+      "files": [
+        "sections/01-home.md"
+      ],
+      "found": "1 of 1",
+      "label": "Section inventories",
+      "detail": "Every screen has an authored section inventory, so section identity is read rather than guessed.",
+      "status": "present",
+      "weight": 20,
+      "expected": "one sections/NN-name.md per screen, listing each band and its contents"
+    },
+    {
+      "id": "prompts",
+      "files": [
+        "prompts/01-home.txt"
+      ],
+      "found": "1 of 1",
+      "label": "Generation prompts",
+      "detail": "1 intent source. This is context, not instruction: it resolves ambiguity the rendering cannot.",
+      "status": "present",
+      "weight": 10,
+      "expected": "one prompts/NN-name.txt per screen"
+    },
+    {
+      "id": "fonts",
+      "files": [
+        "fonts/inter-latin-var.woff2",
+        "fonts/playfair-display-latin-var.woff2"
+      ],
+      "found": "2 files",
+      "label": "Typography sources",
+      "detail": "2 font files supplied and 2 family names named in the type table.",
+      "status": "present",
+      "weight": 10,
+      "expected": "fonts/*.woff2, or exact family names and weights in design-system.md"
+    },
+    {
+      "id": "flow",
+      "files": [
+        "flow.md"
+      ],
+      "found": "10 transitions",
+      "label": "Journey flow",
+      "detail": "flow.md parsed into canvas edges and test journeys.",
+      "status": "present",
+      "weight": 10,
+      "expected": "flow.md, one transition per line, with the action"
+    },
+    {
+      "id": "assets",
+      "files": [
+        "assets/manifest.json",
+        "assets/prepare-report.txt",
+        "assets/icons/account.svg",
+        "assets/icons/arrow-right.svg",
+        "assets/icons/bag.svg",
+        "assets/icons/facebook.svg",
+        "assets/icons/heart.svg",
+        "assets/icons/instagram.svg",
+        "assets/icons/linkedin.svg",
+        "assets/icons/search.svg",
+        "assets/icons/youtube.svg",
+        "assets/images/atelier-bench.png",
+        "assets/images/calibre-movement.png",
+        "assets/images/collection-classic.png",
+        "assets/images/collection-complications.png",
+        "assets/images/collection-sport.png",
+        "assets/images/hero-tourbillon.png",
+        "assets/images/product-heritage-small-seconds.png",
+        "assets/images/product-mariner-300.png",
+        "assets/images/product-perpetual-calendar.png",
+        "assets/images/product-tourbillon-sovereign.png",
+        "assets/logos/crest.svg",
+        "assets/logos/pay-amex.svg",
+        "assets/logos/pay-apple-pay.svg",
+        "assets/logos/pay-mastercard.svg",
+        "assets/logos/pay-visa.svg",
+        "assets/logos/press-hodinkee.svg",
+        "assets/logos/press-monochrome.svg",
+        "assets/logos/press-revolution.svg",
+        "assets/logos/press-the-rake.svg",
+        "assets/logos/press-watchpro.svg",
+        "assets/logos/wordmark.svg"
+      ],
+      "found": "32 files",
+      "label": "Source assets",
+      "detail": "32 source files. These must be originals; a logo cropped out of a JPEG cannot be used in production.",
+      "status": "present",
+      "weight": 5,
+      "expected": "assets/logos, assets/icons, assets/images — originals, not crops"
+    }
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "file": "screens/01-home.jpg",
+      "name": "Home",
+      "sequence": "01"
+    }
+  ],
+  "inferred": [],
+  "manifest": [
+    {
+      "kind": "asset",
+      "path": "assets/icons/account.svg",
+      "bytes": 237,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/arrow-right.svg",
+      "bytes": 221,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/bag.svg",
+      "bytes": 254,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/facebook.svg",
+      "bytes": 246,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/heart.svg",
+      "bytes": 276,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/instagram.svg",
+      "bytes": 285,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/linkedin.svg",
+      "bytes": 309,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/search.svg",
+      "bytes": 214,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/icons/youtube.svg",
+      "bytes": 412,
+      "group": "icons"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/atelier-bench.png",
+      "bytes": 1484277,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/calibre-movement.png",
+      "bytes": 1809445,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/collection-classic.png",
+      "bytes": 754488,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/collection-complications.png",
+      "bytes": 576840,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/collection-sport.png",
+      "bytes": 538585,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/hero-tourbillon.png",
+      "bytes": 2259898,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/product-heritage-small-seconds.png",
+      "bytes": 889677,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/product-mariner-300.png",
+      "bytes": 950114,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/product-perpetual-calendar.png",
+      "bytes": 902506,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/images/product-tourbillon-sovereign.png",
+      "bytes": 1199207,
+      "group": "images"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/crest.svg",
+      "bytes": 377,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/pay-amex.svg",
+      "bytes": 262,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/pay-apple-pay.svg",
+      "bytes": 705,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/pay-mastercard.svg",
+      "bytes": 238,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/pay-visa.svg",
+      "bytes": 250,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/press-hodinkee.svg",
+      "bytes": 259,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/press-monochrome.svg",
+      "bytes": 262,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/press-revolution.svg",
+      "bytes": 262,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/press-the-rake.svg",
+      "bytes": 258,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/press-watchpro.svg",
+      "bytes": 259,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/logos/wordmark.svg",
+      "bytes": 298,
+      "group": "logos"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/manifest.json",
+      "bytes": 6507,
+      "group": "manifest.json"
+    },
+    {
+      "kind": "asset",
+      "path": "assets/prepare-report.txt",
+      "bytes": 822,
+      "group": "prepare-report.txt"
+    },
+    {
+      "kind": "design-system",
+      "path": "design-system.md",
+      "bytes": 6666
+    },
+    {
+      "kind": "flow",
+      "path": "flow.md",
+      "bytes": 2240
+    },
+    {
+      "kind": "font",
+      "path": "fonts/inter-latin-var.woff2",
+      "bytes": 48256
+    },
+    {
+      "kind": "font",
+      "path": "fonts/playfair-display-latin-var.woff2",
+      "bytes": 38404
+    },
+    {
+      "kind": "prompt",
+      "path": "prompts/01-home.txt",
+      "bytes": 408
+    },
+    {
+      "kind": "readme",
+      "path": "README.md",
+      "bytes": 5010
+    },
+    {
+      "kind": "screen",
+      "path": "screens/01-home.jpg",
+      "bytes": 312138
+    },
+    {
+      "kind": "section",
+      "path": "sections/01-home.md",
+      "bytes": 7231
+    }
+  ],
+  "coherence": {
+    "detail": "File presence cannot prove that the rendering, the section inventory, the prompt, and the flow describe the same product. A multimodal preflight has not compared them, so nothing here is evidence of fidelity — only of completeness.",
+    "status": "unverified",
+    "comparedFiles": [
+      "screens/01-home.jpg",
+      "sections/01-home.md",
+      "prompts/01-home.txt",
+      "flow.md"
+    ]
+  },
+  "hasReadme": true,
+  "tokenTable": [
+    {
+      "name": "ink",
+      "role": "Primary text on light surfaces; the footer surface",
+      "group": "color",
+      "value": "#151412",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "ink-deep",
+      "role": "The featured-calibre band surface — a half-step darker than the footer",
+      "group": "color",
+      "value": "#131312",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "ink-inverse",
+      "role": "Text and rules on dark surfaces",
+      "group": "color",
+      "value": "#F4F1EC",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "canvas",
+      "role": "Warm ivory. The atelier band, and the page default",
+      "group": "color",
+      "value": "#F4F1EC",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "paper",
+      "role": "The lighter ivory used by the collection grid, product grid and press band",
+      "group": "color",
+      "value": "#FAF9F7",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "paper-card",
+      "role": "Product-card panel, sitting on `paper`. Six luminance levels apart — deliberate",
+      "group": "color",
+      "value": "#FAF8F4",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "shell",
+      "role": "Hero band surface",
+      "group": "color",
+      "value": "#F6F3EF",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "shell-header",
+      "role": "Header bar surface",
+      "group": "color",
+      "value": "#F5F4F0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "shell-appointment",
+      "role": "Private-appointments band surface",
+      "group": "color",
+      "value": "#F8F5F2",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "metal",
+      "role": "Warm metallic. Underlines on text links, the crest, the calibre eyebrow",
+      "group": "color",
+      "value": "#9B856B",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "line",
+      "role": "Hairline rules and outlined-button borders on light surfaces",
+      "group": "color",
+      "value": "#C9C2B8",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "line-inverse",
+      "role": "Hairline rules on dark surfaces",
+      "group": "color",
+      "value": "#3A3835",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "muted",
+      "role": "Secondary copy, prices, metadata",
+      "group": "color",
+      "value": "#6B6660",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "muted-inverse",
+      "role": "Secondary copy on dark surfaces",
+      "group": "color",
+      "value": "#A8A29A",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "display",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "63px · weight 400 · line-height 1.06",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "heading",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "38px · weight 400 · line-height 1.14",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "quote",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "28px · weight 400 · line-height 1.38",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "wordmark",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "29px · weight 400 · line-height 1.0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "wordmark-footer",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "22px · weight 400 · line-height 1.0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "card-title",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "18px · weight 400 · line-height 1.30",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "product-name",
+      "role": "type role",
+      "group": "type",
+      "value": "Playfair Display",
+      "detail": "14px · weight 400 · line-height 1.40",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "nav",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "11px · weight 400 · line-height 1.0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "eyebrow",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "11px · weight 400 · line-height 1.0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "body",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "13px · weight 400 · line-height 1.60",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "body-sm",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "11px · weight 400 · line-height 1.62",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "price",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "13px · weight 400 · line-height 1.0",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "meta",
+      "role": "type role",
+      "group": "type",
+      "value": "Inter",
+      "detail": "10px · weight 400 · line-height 1.50",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "spacing",
+      "role": "spacing scale",
+      "group": "spacing",
+      "value": "documented in design-system.md",
+      "detail": "Base unit **4px**. Scale: `4 8 12 16 24 32 40 48 64 80 96 120` | Token | Value | Use | |---|---|---| | `gutter` | 7.7% of viewport width (111px at 1440) | Page gutter, both sides. A percentage, not a fixed pixel value | | `band-pad-y` | 96px | Default vertical padding inside a light band | | `band-pad-y-dark` | 80px | Dark bands sit slightly tighter | | `grid-gap` | 24px | Between cards in the 3-up and 4-up grids | | `stack-sm` | 12px | Between a card image and its title | | `stack-md` | 24px | Between a heading and its supporting copy | ---",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "radius",
+      "role": "radius scale",
+      "group": "radius",
+      "value": "documented in design-system.md",
+      "detail": "**`0` everywhere. There is no radius token.** Square corners on cards, images, buttons, inputs and the crest. This is a hard rule for the brand — the ceiling is 0px, not \"small\". ---",
+      "source": "design-system",
+      "inferred": false
+    },
+    {
+      "name": "motion",
+      "role": "motion scale",
+      "group": "motion",
+      "value": "documented in design-system.md",
+      "detail": "| Token | Value | |---|---| | `fast` | 120ms | | `normal` | 200ms | | `slow` | 320ms | | `easing` | `cubic-bezier(0.22, 0.61, 0.36, 1)` (ease-out) | Hover states are opacity and underline only. Nothing scales, nothing translates, nothing lifts. Images do not zoom on hover. ---",
+      "source": "design-system",
+      "inferred": false
+    }
+  ],
+  "totalBytes": 11798603,
+  "totalFiles": 40,
+  "uploadedAt": "2026-08-29T23:15:46.403Z",
+  "packageName": "aurelian-handoff-v3",
+  "designTokens": {
+    "ink": {
+      "value": "#151412",
+      "inferred": false
+    },
+    "nav": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "body": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "line": {
+      "value": "#C9C2B8",
+      "inferred": false
+    },
+    "meta": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "metal": {
+      "value": "#9B856B",
+      "inferred": false
+    },
+    "muted": {
+      "value": "#6B6660",
+      "inferred": false
+    },
+    "paper": {
+      "value": "#FAF9F7",
+      "inferred": false
+    },
+    "price": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "quote": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "shell": {
+      "value": "#F6F3EF",
+      "inferred": false
+    },
+    "canvas": {
+      "value": "#F4F1EC",
+      "inferred": false
+    },
+    "motion": {
+      "value": "documented in design-system.md",
+      "inferred": false
+    },
+    "radius": {
+      "value": "documented in design-system.md",
+      "inferred": false
+    },
+    "body-sm": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "display": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "eyebrow": {
+      "value": "Inter",
+      "inferred": false
+    },
+    "heading": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "spacing": {
+      "value": "documented in design-system.md",
+      "inferred": false
+    },
+    "ink-deep": {
+      "value": "#131312",
+      "inferred": false
+    },
+    "wordmark": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "card-title": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "paper-card": {
+      "value": "#FAF8F4",
+      "inferred": false
+    },
+    "ink-inverse": {
+      "value": "#F4F1EC",
+      "inferred": false
+    },
+    "line-inverse": {
+      "value": "#3A3835",
+      "inferred": false
+    },
+    "product-name": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "shell-header": {
+      "value": "#F5F4F0",
+      "inferred": false
+    },
+    "muted-inverse": {
+      "value": "#A8A29A",
+      "inferred": false
+    },
+    "wordmark-footer": {
+      "value": "Playfair Display",
+      "inferred": false
+    },
+    "shell-appointment": {
+      "value": "#F8F5F2",
+      "inferred": false
+    }
+  },
+  "contractVersion": "1.0"
+}
